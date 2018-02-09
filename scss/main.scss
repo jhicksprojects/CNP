@@ -168,7 +168,7 @@ body
 
 ///////* MEDIA QUERIES *///////
 
-@media (max-width: $desktop)
+@media (max-width: $desktop - 1)
 	{
 	.menu.float-right
 	{
@@ -202,6 +202,22 @@ body
 	.nav
 	{
 		display: none;
+	}
+}
+
+@media (min-width: $desktop)
+	{	
+	.nav
+	{
+		display: block !important;
+	}
+}
+
+@media (min-width: $desktop) and (max-width: 1120px)
+	{	
+	.nav
+	{
+		font-size: 88%;
 	}
 }
 
